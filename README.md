@@ -39,3 +39,10 @@ A fast track way to observe an image and operations performed on it. The idea fo
 
 ## Sample outputs
 - TODO
+
+## References
+- To structure the tkinter application - https://stackoverflow.com/a/17470842
+- tkinter widget related info - https://www.geeksforgeeks.org/python-gui-tkinter/
+- Image operations using ImageOps (Pillow) - https://pillow.readthedocs.io/en/3.0.x/reference/ImageOps.html
+- Image operations using ImageFilter (Pillow) - https://pillow.readthedocs.io/en/5.1.x/reference/ImageFilter.html
+- Otsu thresholding code - https://stackoverflow.com/a/50796152
