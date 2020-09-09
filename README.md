@@ -33,7 +33,7 @@ A fast track way to observe an image and operations performed on it. The idea fo
 - Pillow (tested on 7.2.0)
 
 ## Installation and modifications
-- Clone the repo, install the requirements and run `python main.py`
+- Clone the repo, change directory, install the requirements and run `python main.py`
 - Modifications can be done via the ImageWindow class in `image_window.py` by adding methods as specified (check comments)
 - For readability, clarity and refactor purposes, the actual image manipulation code is specified in `image_manip.py`
 
