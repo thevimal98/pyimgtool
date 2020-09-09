@@ -19,6 +19,8 @@ The application let's you load image files (PIL supported) and perform operation
 * Thresholding
   * Fixed threshold
   * Otsu threshold - binary and otherwise
+* Morphological
+  * Erosion, dilation
 The OO design nature of this application allows easy addition of operations and code refactoring (maybe from PIL to OpenCV)
 
 ## Why pyimgtool?
