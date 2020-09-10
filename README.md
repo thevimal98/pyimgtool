@@ -34,6 +34,7 @@ A fast track way to observe an image and operations performed on it. The idea fo
 
 ## Installation, usage and modifications
 * Clone the repo, change directory, install the requirements and run `python main.py`
+  * If you're using `pip`, install the requirements using `pip install -r requirements.txt`
 * Modifications can be done via the ImageWindow class in `image_window.py` by adding methods as specified (check comments)
 * For readability, clarity and refactor purposes, the actual image manipulation code is specified in `image_manip.py`
 
