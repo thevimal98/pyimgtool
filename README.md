@@ -39,7 +39,29 @@ A fast track way to observe an image and operations performed on it. The idea fo
 * For readability, clarity and refactor purposes, the actual image manipulation code is specified in `image_manip.py`
 
 ## Sample outputs
-* TODO
+#### Image - ./data/samples/shapes.jpg
+
+<img src="https://github.com/thevimal98/pyimgtool/blob/master/data/screenshots/loaded_shapes.JPG" width=50% height=50%>
+
+* After applying Gaussian Blur operation
+
+<img src="https://github.com/thevimal98/pyimgtool/blob/master/data/screenshots/loaded_shapes_GB.JPG" width=50% height=50%>
+
+* After applying Binary Otsu Thresholding operation
+
+<img src="https://github.com/thevimal98/pyimgtool/blob/master/data/screenshots/loaded_shapes_BOT.JPG" width=50% height=50%>
+
+#### Image - ./data/samples/a.jpg
+
+<img src="https://github.com/thevimal98/pyimgtool/blob/master/data/screenshots/loaded_a.JPG" width=50% height=50%>
+
+* After applying Erosion operation
+
+<img src="https://github.com/thevimal98/pyimgtool/blob/master/data/screenshots/loaded_a_erosion.JPG" width=50% height=50%>
+
+* After applying Dilation operation
+
+<img src="https://github.com/thevimal98/pyimgtool/blob/master/data/screenshots/loaded_a_dilation.JPG" width=50% height=50%>
 
 ## References
 * To structure the tkinter application - https://stackoverflow.com/a/17470842
@@ -47,3 +69,4 @@ A fast track way to observe an image and operations performed on it. The idea fo
 * Image operations using ImageOps (Pillow) - https://pillow.readthedocs.io/en/3.0.x/reference/ImageOps.html
 * Image operations using ImageFilter (Pillow) - https://pillow.readthedocs.io/en/5.1.x/reference/ImageFilter.html
 * Otsu thresholding code - https://stackoverflow.com/a/50796152
+* Thresholding - overview - https://datacarpentry.org/image-processing/07-thresholding/
