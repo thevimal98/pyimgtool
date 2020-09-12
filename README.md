@@ -38,6 +38,19 @@ A fast track way to observe an image and operations performed on it. The idea fo
 * Modifications can be done via the ImageWindow class in `image_window.py` by adding methods as specified (check comments)
 * For readability, clarity and refactor purposes, the actual image manipulation code is specified in `image_manip.py`
 
+## Create an executable
+
+Make `pyimgtool` work out of the box, by creating an executable.
+
+```shell
+pip install pyinstaller # if you don't have it installed already
+cd <your-path>/pyimgtool # or the directory that you clone this project in
+pyinstaller main.py -F --onefile
+```
+Find the executable in the `dist` folder.
+
+For more information on creating executables, [read the docs](https://pyinstaller.readthedocs.io/en/stable/usage.html).
+
 ## Sample outputs
 #### Image - ./data/samples/shapes.jpg
 
