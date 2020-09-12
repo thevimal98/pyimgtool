@@ -2,7 +2,7 @@ import tkinter as tk
 from PIL import Image, ImageTk
 from modules.image_manip import (grayscale, flip_v, flip_h, gaussian_blur, mean_blur, laplacian, 
                         sobel, sharpen, threshold_fixed, threshold_otsu_binary, threshold_otsu,
-                        erosion, dilation)
+                        erosion, dilation, invert)
 
 class ImageWindow(tk.Frame):
     def __init__(self, parent, image_path, *args, **kwargs):
@@ -119,6 +119,11 @@ class ImageWindow(tk.Frame):
         self.var_image_stack.append(self.var_image)
         self.display_image()
 
+    def menubar_image_invert(self):
+        self.var_image = invert(self.var_image)
+        self.var_image_stack.append(self.var_image)
+        self.display_image()
+
     # add new method here
 
     def load_menubar(self):
@@ -133,6 +138,7 @@ class ImageWindow(tk.Frame):
         menu_image.add_command(label="Convert To Grayscale", command=self.menubar_image_convert_grayscale)
         menu_image.add_command(label="Flip Vertically", command=self.menubar_image_flip_v)
         menu_image.add_command(label="Flip Horizontally", command=self.menubar_image_flip_h)
+        menu_image.add_command(label="Invert", command=self.menubar_image_invert)
         
         menu_blur = tk.Menu(self.menu_bar, tearoff=0)
         self.menu_bar.add_cascade(label="Blur / Sharpen", menu=menu_blur)

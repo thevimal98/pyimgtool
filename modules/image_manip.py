@@ -1,4 +1,4 @@
-from PIL import Image, ImageFilter
+from PIL import Image, ImageFilter, ImageOps
 import numpy as np
 
 def grayscale(image):
@@ -100,3 +100,8 @@ def erosion(image):
 
 def dilation(image):
     return image.filter(ImageFilter.MaxFilter)
+
+def invert(image):
+    if(image.mode=="LA"):
+        return ImageOps.invert(image.convert('L'))
+    return ImageOps.invert(image)
