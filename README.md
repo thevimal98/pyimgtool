@@ -1,6 +1,8 @@
 # pyimgtool [![HitCount](http://hits.dwyl.com/thevimal98/pyimgtool.svg)](http://hits.dwyl.com/thevimal98/pyimgtool)
 Python Image Tool - a tkinter based CVIPtools like application for image processing.
 
+For a quick demo, head over to https://repl.it/github/thevimal98/pyimgtool and click `Run`
+
 ## What is pyimgtool?
 It's a tkinter based GUI application to perform image processing.
 
